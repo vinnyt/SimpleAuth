@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Twitter' do |ss|
+    ss.dependency 'SimpleAuth/Core'
     ss.dependency 'SimpleAuth/UI'
 
     ss.source_files = 'Providers/Twitter/**/*.{h,m}'
